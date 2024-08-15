@@ -4,9 +4,9 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+/*@import url('./reset.css');
 @import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./header.css');*/
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +22,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+.nav-link:hover {
+  color: #6c8cff;
 }

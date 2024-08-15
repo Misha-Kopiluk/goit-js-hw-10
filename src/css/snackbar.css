@@ -1,0 +1,52 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.form > label {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form > label > input{
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    max-width: 360px;
+    min-height: 40px;
+}
+
+fieldset {
+    box-sizing: border-box;    
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    max-width: 360px;
+    padding: 24px 48px 8px 48px;
+    margin: 0 0 24px 0;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 360px;
+    border-color: transparent;
+    background-color: #4e75ff;
+}
+
+button:hover {
+    background-color: #6c8cff;
+}
+
+.iziToast-wrapper {
+    top: 0;
+    right: 0;
+}
