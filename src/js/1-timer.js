@@ -6,10 +6,10 @@ import "izitoast/dist/css/iziToast.min.css";
 const fieleBtn = document.querySelector("button");
 fieleBtn.setAttribute("disabled", true);
 const elemInput = document.querySelector("#datetime-picker");
-const dataDays = document.querySelector(".value[data-days]");
-const dataHours = document.querySelector(".value[data-hours]");
-const dataMinutes = document.querySelector(".value[data-minutes]");
-const dataSeconds = document.querySelector(".value[data-seconds]");
+const timeDays = document.querySelector(".value[data-days]");
+const timeHours = document.querySelector(".value[data-hours]");
+const timeMinutes = document.querySelector(".value[data-minutes]");
+const timeSeconds = document.querySelector(".value[data-seconds]");
 
 let userSelectedDate;
 
@@ -58,10 +58,10 @@ function convertMs(ms) {
 
 
 function addLeadingZero(value) {
-  dataDays.textContent = String(value.days).padStart(2, '0');
-  dataHours.textContent = String(value.hours).padStart(2, '0');
-  dataMinutes.textContent = String(value.minutes).padStart(2, '0');
-  dataSeconds.textContent = String(value.seconds).padStart(2, '0'); 
+  timeDays.textContent = String(value.days).padStart(2, '0');
+  timeHours.textContent = String(value.hours).padStart(2, '0');
+  timeMinutes.textContent = String(value.minutes).padStart(2, '0');
+  timeSeconds.textContent = String(value.seconds).padStart(2, '0'); 
 };
 
 function startTime() {
